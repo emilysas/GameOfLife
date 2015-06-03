@@ -108,6 +108,11 @@ namespace GameOfLife
 			ecosystem.PlaceLivingCell (14, 10);
 			ecosystem.PlaceLivingCell (14, 11);
 			ecosystem.PlaceLivingCell (14, 12);
+			ecosystem.PlaceLivingCell (16, 5);
+			ecosystem.PlaceLivingCell (16, 6);
+			ecosystem.PlaceLivingCell (16, 10);
+			ecosystem.PlaceLivingCell (16, 11);
+			ecosystem.PlaceLivingCell (16, 12);
 		}
 
 		static void AnimateGrid()
