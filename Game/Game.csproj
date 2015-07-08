@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -32,12 +32,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Cell.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Grid.cs">
-      <DependentUpon>Grid.cs</DependentUpon>
-    </Compile>
-    <Compile Include="EcoSystem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GoLClassLibrary\GoLClassLibrary.csproj">
+      <Project>{280cd2a5-0dd0-4364-84b4-2b56a0ff49d5}</Project>
+      <Name>GoLClassLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

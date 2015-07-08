@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Text;
-using GameOfLife;
 using System.Threading;
 
 namespace GameOfLife

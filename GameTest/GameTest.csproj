@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -40,12 +40,12 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\Game\Game.csproj">
-      <Project>{E403F1F9-E369-4151-80FB-D8B4EB047A39}</Project>
-      <Name>Game</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\GoLClassLibrary\GoLClassLibrary.csproj">
+      <Project>{280cd2a5-0dd0-4364-84b4-2b56a0ff49d5}</Project>
+      <Name>GoLClassLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
