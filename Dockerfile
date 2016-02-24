@@ -1,4 +1,4 @@
 FROM mono:4.2.1
-ADD . /build
+ADD ./Game/bin/Debug/ /build
 WORKDIR /build
-CMD ["mono", "./Game/bin/Debug/Game.exe"]
+CMD ["mono", "./Game.exe"]
